@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Audio Recorder Pro</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="rec_cancel">Exit</string>
+    <string name="rec_info">Tap on mic icon to start recording, taping on stop icon will save file on SD card. 
+       \nIf recording was not good you can delete it by pressing delete icon and try again or you can delete and compare with other saved file by tapping on list icon. 
+      \nIf you think recording is up to your expectations you can share it with your friends from browsing list</string>
+    <string name="rec_title">Audio Recorder</string>
+    <string name="rec_start">Recording Started</string>
+    <string name="rec_fail">Recording Failed</string>
+    <string name="rec_fail_mkdir">Failed to create recordings folder</string>
+    <string name="rec_saved">Recording Saved at </string>
+    <string name="rec_deleted">Deleted recording</string>
+    <string name="rec_delete_fail">Failed to delete recording </string>
+    <string name="banner_ad_unit_id">ca-app-pub-9404626930613325/4259844699</string>
+    <string name="banner_ad_unit_id_pop">ca-app-pub-9404626930613325/5736577892</string>
+
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ripple="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res/com.serveroverload.recorder"
+    android:id="@+id/selected_friend_root"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <com.serveroverload.recorder.customview.SwipeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ripple="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/swipe_layout_1"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        app:show_mode="pull_out" >
+
+        <!-- Bottom View Start -->
+
+        <LinearLayout
+            android:id="@+id/hidden_menu_item"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:background="#C0C0C0" >
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="#D24AA3" >
+
+                <ImageView
+                    android:id="@+id/share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:animateLayoutChanges="true"
+                    android:padding="5dp"
+                    android:src="@drawable/share" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:background="@android:color/white" />
+
+            <FrameLayout
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:background="#0CBBCB" >
+
+                <ImageView
+                    android:id="@+id/delete_song"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:animateLayoutChanges="true"
+                    android:background="@drawable/delete"
+                    android:padding="5dp" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <!-- Add as many bottom view you want to add here -->
+
+
+        <!-- Bottom View End -->
+
+
+        <!-- Surface View Start -->
+
+        <LinearLayout
+            android:id="@+id/top_view"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="#FFC6C4"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/textViewRecordingName"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center_vertical"
+                android:ellipsize="marquee"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:freezesText="true"
+                android:gravity="center_vertical"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:maxLines="2"
+                android:scrollHorizontally="true"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+        <!-- Surface View End -->
+    </com.serveroverload.recorder.customview.SwipeLayout>
+
+</LinearLayout>
